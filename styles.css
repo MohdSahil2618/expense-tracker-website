@@ -1,0 +1,169 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4); /* Background color matching the container's gradient */
+    margin: 0;
+    flex-direction: column;
+    height: 100%;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4); /* Same gradient as the body */
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-height: 95%;
+    overflow-y: auto;
+}
+
+/* Title Styles */
+h1 {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+/* Expense Form */
+.expense-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+input, button, select {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+input, select {
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3e8e41;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+/* Category-wise Totals */
+.category-totals {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #333;
+    font-weight: bold;
+}
+
+.category-totals p {
+    margin: 5px 0;
+}
+
+/* Total Expense */
+#total-expense {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+/* Button Styles */
+.buttons {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* Expense List */
+.expense-list {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.expense-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.expense-item:hover {
+    background-color: #ffecf0;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.expense-item span {
+    color: #555;
+    font-weight: bold;
+}
+
+.delete-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+    background-color: #ff3333;
+}
+
+/* Chart Container */
+.chart-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45vh; /* Adjust chart container height to fit the screen */
+    width: 100%;
+}
+
+canvas {
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 100%;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    padding: 10px;
+}

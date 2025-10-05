@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h1>Expense Tracker</h1>
+
+    <!-- Expense Form -->
+    <div class="expense-form">
+        <input type="text" id="description" placeholder="Description" required>
+        <input type="number" id="amount" placeholder="Amount" required>
+        <input type="date" id="date" required>
+        
+        <!-- Category Dropdown -->
+        <select id="category" required>
+            <option value="Dining">Dining</option>
+            <option value="Shopping">Shopping</option>
+            <option value="Groceries">Groceries</option>
+        </select>
+
+        <button onclick="addExpense()">Add Expense</button>
+    </div>
+
+    <!-- Total Expense -->
+    <h2>Total Expense: $<span id="total-expense">0.00</span></h2>
+
+    <!-- Category-wise Expenses -->
+    <div class="category-totals">
+        <p>Dining: $<span id="dining-total">0.00</span></p>
+        <p>Shopping: $<span id="shopping-total">0.00</span></p>
+        <p>Groceries: $<span id="groceries-total">0.00</span></p>
+    </div>
+
+    <!-- Expense List -->
+    <div class="expense-list" id="expense-list"></div>
+
+    <!-- Buttons to toggle views -->
+    <div class="buttons">
+        <button onclick="showExpenses()">View Expenses</button>
+        <button onclick="showChart()">View Chart</button>
+    </div>
+
+    <!-- Chart -->
+    <div class="chart-container" id="chart-container" style="display:none;">
+        <canvas id="expenseChart"></canvas>
+    </div>
+</div>
+<script src="scrip.js"></script>
+</body>
+</html>

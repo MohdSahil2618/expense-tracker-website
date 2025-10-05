@@ -2,7 +2,10 @@
 A sleek and intuitive web application designed to help users track their daily expenses with ease. This project provides a clean interface for adding expenses, categorizing them, and visualizing spending habits through an interactive chart.
 
 ✨ [View the Live Demo]([https://expense-tracker-mohdsahil.netlify.app/])
+
+
 📸 Screenshots
+
 1) Expense List View:-
 <img width="1920" height="1080" alt="Screenshot (111)" src="https://github.com/user-attachments/assets/f86bd830-9a6d-4afb-a35e-067a1ecc560b" />
 
